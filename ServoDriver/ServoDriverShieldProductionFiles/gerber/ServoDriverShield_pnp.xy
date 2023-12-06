@@ -1,0 +1,34 @@
+# Pick And Place List
+# Company=
+# Author=
+# eMail=
+#
+# Project=ServoDriverShield
+# Date=22:41:07
+# CreatedBy=Fritzing 1.0.1rc.2023-09-04.CD-1653-0-8d480a18
+#
+#
+# Coordinates in mils, always center of component
+# Origin 0/0=Lower left corner of PCB
+# Rotation in degree (0-360, math. pos.)
+#
+RefDes,Description,Package,X,Y,Rotation,Side,Mount
+Description: resistance;capacitance;inductance;voltage;current;power;mpn;mn;
+R2,"220;;;;;0.25W;;;","THT",2076.71,632.155,0,Top,THT
+R1,"220;;;;;0.25W;;;","THT",2076.71,532.155,0,Top,THT
+C1,";100nF;;35V;;;;;","200 mil [THT, multilayer]",826.711,1032.16,-1.27222e-14,Top,THT
+100>,";;;;;;;;","[THT]",1954.66,320.745,0,Top,THT
+R7,"220;;;;;0.25W;;;","THT",2076.71,1332.16,0,Top,THT
+J2,";;;;;;;;","THT",1376.71,1832.16,90,Top,THT
+R3,"220;;;;;0.25W;;;","THT",2076.71,732.155,0,Top,THT
+R6,"220;;;;;0.25W;;;","THT",2076.71,1232.16,0,Top,THT
+J5,";;;;;;;;","THT",2326.71,782.155,0,Bottom,THT
+R5,"220;;;;;0.25W;;;","THT",2076.71,1032.16,0,Top,THT
+J6,";;;;;;;;","THT",2326.71,1448.82,0,Bottom,THT
+R8,"220;;;;;0.25W;;;","THT",2076.71,1632.16,0,Top,THT
+J1,";;;;;;;;","THT",1376.71,932.155,-90,Top,THT
+J4,";;;;;;;;","THT",426.711,1232.16,0,Bottom,THT
+Analog,";;;;;;;;","THT",426.711,432.155,0,Bottom,THT
+Servo,";;;;;;;;","THT",826.711,432.155,90,Top,THT
+R4,"220;;;;;0.25W;;;","THT",2076.71,832.155,0,Top,THT
+<100,";;;;;;;;","[THT]",1454.66,320.745,0,Top,THT
