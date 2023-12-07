@@ -1,0 +1,31 @@
+# Pick And Place List
+# Company=
+# Author=
+# eMail=
+#
+# Project=ServoDriverNano
+# Date=19:38:45
+# CreatedBy=Fritzing 1.0.1rc.2023-09-04.CD-1653-0-8d480a18
+#
+#
+# Coordinates in mils, always center of component
+# Origin 0/0=Lower left corner of PCB
+# Rotation in degree (0-360, math. pos.)
+#
+RefDes,Description,Package,X,Y,Rotation,Side,Mount
+Description: resistance;capacitance;inductance;voltage;current;power;mpn;mn;
+Servo,";;;;;;;;","THT",2031.83,1624.1,0,Top,THT
+R7,"220;;;;;0.25W;;;","THT",1181.83,2024.1,0,Top,THT
+R4,"220;;;;;0.25W;;;","THT",831.833,2074.1,-90,Top,THT
+<100,";;;;;;;;","[THT]",1859.79,612.685,0,Top,THT
+C1,";100nF;;35V;;;;;","200 mil [THT, multilayer]",1531.83,1624.1,-90,Top,THT
+R8,"220;;;;;0.25W;;;","THT",1181.83,2124.1,0,Top,THT
+R5,"220;;;;;0.25W;;;","THT",931.833,2074.1,-90,Top,THT
+R3,"220;;;;;0.25W;;;","THT",631.833,1374.1,-90,Top,THT
+J3,";;;;;;;;","THT",1381.83,3124.1,90,Top,THT
+100>,";;;;;;;;","[THT]",2415.34,613.296,0,Top,THT
+R2,"220;;;;;0.25W;;;","THT",531.833,1474.1,-90,Top,THT
+J4,";;;;;;;;","THT",1381.83,2224.1,-90,Top,THT
+R6,"220;;;;;0.25W;;;","THT",431.833,1474.1,-90,Top,THT
+R1,"220;;;;;0.25W;;;","THT",331.833,1474.1,-90,Top,THT
+Nano,";;;;;;;;","",1031.83,1123.76,0,Top,MANUAL
