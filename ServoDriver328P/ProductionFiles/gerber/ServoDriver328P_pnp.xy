@@ -4,7 +4,7 @@
 # eMail=
 #
 # Project=ServoDriver328P
-# Date=23:27:07
+# Date=23:33:59
 # CreatedBy=Fritzing 1.0.1rc.2023-09-04.CD-1653-0-8d480a18
 #
 #
@@ -15,27 +15,27 @@
 RefDes,Description,Package,X,Y,Rotation,Side,Mount
 Description: resistance;capacitance;inductance;voltage;current;power;mpn;mn;
 7805,";;;5V;;;;;","to-220-alt",2165.83,1924.1,90,Top,THT
-Via1,";;;;;;;;","",1631.83,1124.1,0,Bottom,MANUAL
 R8,"220;;;;;0.25W;;;","THT",1331.83,1974.1,-90,Top,THT
-S1,";;;;;;;;","switch-spdt_kit",2531.83,2631.09,0,Bottom,SMT
-R1,"220;;;;;0.25W;;;","THT",231.833,1574.1,-90,Top,THT
 100>,";;;;;;;;","[THT]",2403.88,513.296,0,Top,THT
 R2,"220;;;;;0.25W;;;","THT",431.833,1474.1,-90,Top,THT
-C5,";100nF;;35V;;;;;","100 mil [THT, multilayer]",1731.83,1874.1,-90,Top,THT
 9V,";;;9V;;;;;","",2331.83,2674.1,0,Bottom,MANUAL
 R3,"220;;;;;0.25W;;;","THT",631.833,1374.1,-90,Top,THT
-ATmega328P,";;;;;;;;","dip",1181.83,1074.1,0,Top,THT
-R5,"220;;;;;0.25W;;;","THT",731.833,1324.1,-90,Top,THT
 C3,";100nF;;35V;;;;;","100 mil [THT, multilayer]",431.833,674.095,-90,Top,THT
-J3,";;;;;;;;","THT",1381.83,3124.1,90,Top,THT
 C1,";100nF;;35V;;;;;","200 mil [THT, multilayer]",2231.83,1624.1,0,Top,THT
 R6,"220;;;;;0.25W;;;","THT",331.833,1474.1,-90,Top,THT
 J4,";;;;;;;;","THT",1381.83,2224.1,-90,Top,THT
+C4,";100nF;;35V;;;;;","100 mil [THT, multilayer]",931.833,1074.1,-90,Top,THT
+Via1,";;;;;;;;","",1631.83,1124.1,0,Bottom,MANUAL
+S1,";;;;;;;;","switch-spdt_kit",2531.83,2631.09,0,Bottom,SMT
+R1,"220;;;;;0.25W;;;","THT",231.833,1574.1,-90,Top,THT
+C5,";100nF;;35V;;;;;","100 mil [THT, multilayer]",1731.83,1874.1,-90,Top,THT
+ATmega328P,";;;;;;;;","dip",1181.83,1074.1,0,Top,THT
+R5,"220;;;;;0.25W;;;","THT",731.833,1324.1,-90,Top,THT
+J3,";;;;;;;;","THT",1381.83,3124.1,90,Top,THT
 R7,"220;;;;;0.25W;;;","THT",531.833,1374.1,-90,Top,THT
 Y1,";;;;;;;;","hc49u-v",631.833,829.095,90,Top,SMT
 C6,";100nF;;35V;;;;;","100 mil [THT, multilayer]",2231.83,1974.1,-90,Bottom,THT
 C2,";100nF;;35V;;;;;","100 mil [THT, multilayer]",431.833,974.095,-90,Top,THT
-C4,";100nF;;35V;;;;;","100 mil [THT, multilayer]",931.833,1074.1,-90,Top,THT
 R4,"220;;;;;0.25W;;;","THT",831.833,1324.1,-90,Top,THT
 Servo,";;;;;;;;","THT",2331.83,1324.1,0,Top,THT
 <100,";;;;;;;;","[THT]",1803.88,512.685,0,Top,THT
