@@ -16,8 +16,8 @@
 #define G 8
 #define P A5
 
-const int num_digits = 4;
-const int num_segments = 7+1;
+const byte num_digits = 4;
+const byte num_segments = 7+1;
 
 byte digit_pin[] = {D1, D2, D3, D4};
 byte segment_pin[] = {A, B, C, D, E, F, G, P};
@@ -27,12 +27,32 @@ byte segment_pin[] = {A, B, C, D, E, F, G, P};
 #define UP 1
 
 byte button_pin[] = {9, 10};
-int last_reading[] = {HIGH, HIGH};
-int last_state[] = {HIGH, HIGH};
+byte last_reading[] = {HIGH, HIGH};
+byte last_state[] = {HIGH, HIGH};
 unsigned long last_debounce_time[] = {0, 0};
 unsigned long debounce_delay = 50;
-int sel_digit = 0;
+byte sel_digit = 0;
 
+#define E_SEGS 10
+#define F_SEGS 11
+#define r_SEGS 12
+
+bool num_segs[][8] = {
+  // A      B      C      D      E      F      G      *
+  { true,  true,  true,  true,  true,  true, false, false}, // 0
+  {false,  true,  true, false, false, false, false, false}, // 1
+  { true,  true, false,  true,  true, false,  true, false}, // 2
+  { true,  true,  true,  true, false, false,  true, false}, // 3
+  {false,  true,  true, false, false,  true,  true, false}, // 4
+  { true, false,  true,  true, false,  true,  true, false}, // 5
+  { true, false,  true,  true,  true,  true,  true, false}, // 6
+  { true,  true,  true, false, false, false, false, false}, // 7
+  { true,  true,  true,  true,  true,  true,  true, false}, // 8
+  { true,  true,  true,  true, false,  true,  true, false}, // 9
+  { true, false, false,  true,  true,  true,  true, false}, // E
+  { true, false, false, false,  true,  true,  true, false}, // F
+  {false, false, false, false,  true, false,  true, false} // r
+};
 
 void setup() {
   Serial.begin(115200);
@@ -104,8 +124,7 @@ void clear_display() {
   for (int d = 0; d < num_digits; d++) {
     digitalWrite(digit_pin[d], HIGH);
   }
-  
-//  for (int s = 0; s < num_segments; s++) {
-//    digitalWrite(segment_pin[s], LOW);
-//  }
+  for (int s = 0; s < num_segments; s++) {
+    digitalWrite(segment_pin[s], LOW);
+  }
 }
