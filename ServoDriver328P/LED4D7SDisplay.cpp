@@ -1,6 +1,6 @@
 #include "LED4D7SDisplay.h"
 
-#define LED_ON_DUR 100
+#define LED_ON_DUR 1
 
 #define NO_VAL 10
 #define E_VAL  11
@@ -89,9 +89,9 @@ void LED4D7SDisplay::displayDigit(const byte digit, const byte value_index) {
   for (int s = 0; s < NUM_SEGMENTS; s++) {
     digitalWrite(segment_pins[s], value_segs[value_index][s]);
   }
-  digitalWrite(digit_pins[digit-1], LOW);
+  digitalWrite(digit_pins[digit], LOW);
   delay(LED_ON_DUR);
-  digitalWrite(digit_pins[digit-1], HIGH);
+  digitalWrite(digit_pins[digit], HIGH);
   for (int s = 0; s < NUM_SEGMENTS; s++) {
     digitalWrite(segment_pins[s], LOW);
   }
